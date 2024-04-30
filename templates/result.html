@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Analysis Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            margin-bottom: 30px;
+            font-size: 24px;
+            color: #333;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+        .box {
+            margin: 0 10px;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            width: 200px;
+        }
+        .green-box {
+            background-color: #8bc34a; /* Green color */
+        }
+        .orange-box {
+            background-color: #ff9800; /* Orange color */
+        }
+        .red-box {
+            background-color: #f44336; /* Red color */
+        }
+        .box h2 {
+            color: #fff; /* White text color */
+            margin-top: 0; /* Remove margin from the top */
+        }
+        .back-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            border-radius: 20px;
+            border: none;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+        .back-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Stocks Helper Web v1</h1>
+    
+    <div class="container">
+        <div class="box green-box">
+            <h2>Green Line</h2>
+            <pre>{{ Greenresult }}</pre>
+        </div>
+        <div class="box orange-box">
+            <h2>Orange Line</h2>
+            <pre>{{ Orangeresult }}</pre>
+        </div>
+        <div class="box red-box">
+            <h2>Red Line</h2>
+            <pre>{{ Redresult }}</pre>
+        </div>
+    </div>
+
+    <a href="/" class="back-button">Back</a>
+</body>
+</html>
